@@ -7,6 +7,7 @@ const GET_BLOGS = gql`
     title
     description
     created_at
+    updated_at
     }
   }
 

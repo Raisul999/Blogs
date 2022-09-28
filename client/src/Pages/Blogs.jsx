@@ -9,10 +9,10 @@ const Blogs = () => {
   const { data, error, loading } = useQuery(GET_BLOGS)
 
   if (loading) {
-    return <h3 className="text-center ">...Loading</h3>
+    return <h3 className="text-center text-3xl">...Loading</h3>
   }
   if (error) {
-    return <p>Something Went Wrong</p>
+    return <h3 className="text-center text-3xl">Something Went Wrong</h3>
   }
 
   const toAddBlog=()=>{
@@ -38,7 +38,7 @@ const Blogs = () => {
           ))
         }
 
-      </div> : <div classNameName="text-center">No Blogs</div>}
+      </div> : <div classNameName="text-center"><h3 className="text-center text-3xl">No Blogs</h3></div>}
     </>
   )
 }

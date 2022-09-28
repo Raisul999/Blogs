@@ -58,7 +58,7 @@ const UpdateBlog = () => {
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Description
                         </label>
-                        <textarea className="border rounded w-full py-2 px-3 bg-slate-100 text-gray-700 mb-3 leading-tight focus:border-black focus:shadow-outline"
+                        <textarea rows="10" className="border rounded w-full py-2 px-3 bg-slate-100 text-gray-700 mb-3 leading-tight focus:border-black focus:shadow-outline"
                             type="text"
                             placeholder="Description"
                             value={description}

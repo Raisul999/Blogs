@@ -16,7 +16,8 @@ const BlogType = new GraphQLObjectType({
         id:{type: GraphQLID},
         title:{type: GraphQLString},
         description:{type: GraphQLString},
-        created_at: {type: GraphQLString}
+        created_at: {type: GraphQLString},
+        updated_at: {type: GraphQLString}
 
     })
 })
@@ -58,7 +59,7 @@ const Mutations = new GraphQLObjectType({
                 title: {type: GraphQLString},
                 description: {type: GraphQLString},
                 created_at: {type: GraphQLString}    
-
+                
             },
             async resolve(parent,args){
                 await pool.query(`INSERT INTO blogsList(title, description) VALUES($1, $2)`,
